@@ -1,0 +1,37 @@
+Notes for Albert Pinto
+
+Training Corpus : 5574 labeled SMS corpus
+Feature Vector Generation : TfIDFvectorizer, CountVectorizer
+Labels: Suspicious or Correct
+------------------------------
+			|
+			|	
+			V
+	Machine Learning Model ( Proposed Machine learning Model : Decision Tree, Random Forest)
+________________________________
+	Testing of the Machine learning Model
+
+--- New Dataset : SMS from the Albert Pinto
+--- Create a Feature Vector using the above mentioned technique
+--- Pass the feature vector to the model
+--- Generate the expected label
+
+Possible Deliverable targeting :
+
+Basic Statistics of the messages : Quartiles, Number of messages in each category
+Pipeline, Model and evaluation 
+The trained model will be stored and will be provided as function to be used. If the new data comes in then the model will be trained and tested again. 
+
+Pipeline : 
+Data Preprocessing 
+---Tokenization, 
+---lemmatization (is possible or needed)
+--- Tagging (part of speech) ( lets see what we get from this)
+Note : we will not perform stopwords removal and punctuation removal ( I think these are centric to text. But let me discuss).
+
+Data Vectors 
+
+--- Since the machine learning can never be trained on the textual data, it has to be converted to numbers.
+--- In this step we will perform CountVectorizer ( frequency based) and Tf-idf measure to generate vector values for each text.
+result will be (5574, 8874)
+
